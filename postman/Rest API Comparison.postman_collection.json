@@ -1,0 +1,373 @@
+{
+  "info": {
+    "_postman_id": "cf65845e-ebda-4f7c-b2df-806815804f01",
+    "name": "Rest API Comparison",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56099643"
+  },
+  "item": [
+    {
+      "name": "Python (FastAPI)",
+      "item": [
+        {
+          "name": "Get All Movies",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/movies",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "movies"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Movie By ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/movies/{id}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "movies",
+                "{id}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Movie",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Inception\",\r\n  \"director\": \"Christopher Nolan\",\r\n  \"year\": 2010,\r\n  \"genre\": \"Sci-Fi\",\r\n  \"rating\": 8.8\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/movies",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "movies"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Movie",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Inception\",\r\n  \"director\": \"Christopher Nolan\",\r\n  \"year\": 2010,\r\n  \"genre\": \"Sci-Fi\",\r\n  \"rating\": 8.8\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/movies/{id}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "movies",
+                "{id}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Movie",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/movies/{id}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "movies",
+                "{id}"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "TypeScript (Express)",
+      "item": [
+        {
+          "name": "Get All Movies",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/movies",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "movies"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Movie By ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/movies/{id}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "movies",
+                "{id}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Movie",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Inception\",\r\n  \"director\": \"Christopher Nolan\",\r\n  \"year\": 2010,\r\n  \"genre\": \"Sci-Fi\",\r\n  \"rating\": 8.8\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/movies",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "movies"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Movie",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Inception\",\r\n  \"director\": \"Christopher Nolan\",\r\n  \"year\": 2010,\r\n  \"genre\": \"Sci-Fi\",\r\n  \"rating\": 8.8\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/movies/{id}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "movies",
+                "{id}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Movie",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/movies/{id}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "movies",
+                "{id}"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Go (Gin)",
+      "item": [
+        {
+          "name": "Get All Movies",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/movies",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "movies"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Movie By ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/movies/{id}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "movies",
+                "{id}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Movie",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Inception\",\r\n  \"director\": \"Christopher Nolan\",\r\n  \"year\": 2010,\r\n  \"genre\": \"Sci-Fi\",\r\n  \"rating\": 8.8\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/movies",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "movies"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Movie",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Inception\",\r\n  \"director\": \"Christopher Nolan\",\r\n  \"year\": 2010,\r\n  \"genre\": \"Sci-Fi\",\r\n  \"rating\": 8.8\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/movies/{id}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "movies",
+                "{id}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Movie",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/movies/{id}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "movies",
+                "{id}"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
