@@ -18,7 +18,7 @@ FINAL4102/
 
 ├── setup.bat          # Installs all dependencies
 
-└── start.bat          # Launches all three servers
+└── launch.bat          # Launches all three servers
 
 ## Getting Started
 
@@ -28,7 +28,7 @@ Install all dependencies:
 setup.bat
 
 Start all three servers:
-start.bat
+launch.bat
 
 ## Ports
 
